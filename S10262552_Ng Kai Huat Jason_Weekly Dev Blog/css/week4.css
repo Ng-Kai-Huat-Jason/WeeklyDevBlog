@@ -1,0 +1,145 @@
+h1{
+    color:lightcoral;
+}
+nav{
+    font-size:19px;
+    background-color: lightgray;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.container h4{
+    font-size:30px;
+    text-align: center;
+}
+
+.blogheader{
+    text-align: center; 
+    font-size:50px; 
+    color:purple;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container{
+    text-align: center;
+  }
+
+.MYUL{
+    display: inline-block;
+    text-align: left;
+    font-family:'Roboto Slab';
+    font-size:22px;
+}
+
+.hyperlinkcenter{
+    text-align: center;
+}
+
+
+.container-responsive-images{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    flex-wrap: wrap;
+    /*wrap flex items to a new row if not enough space */
+}
+
+
+/* flex item of 20% per item */
+.flex-item {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 15%;
+    /* 15% for borders*/
+
+    display: flex;
+    flex-direction: column;
+    /* so child elements can use flexbox stuff too! */
+    /* switching on borders will force the 5th flex item to move down*/
+    border: 1px solid #D3D3D3;
+
+
+    /* let's set random images if we want to create cover images */
+    /*
+background-image: url("https://picsum.photos/400/400");
+background-size: cover;
+*/
+}
+
+.flex-img img {
+    max-width: 50%;
+}
+
+.flex-info {
+    margin-top: auto;
+}
+
+@media (max-width: 920px) {
+    .flex-item {
+        flex: 0 45%;
+    }
+/* This is a flex shorthand */
+/* we set 
+flex-grow: 1; 
+flex-basis: 21%;
+Flex shorthand: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+Understand flex grow: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+*/
+}
+
+img{
+width: 50px;
+}
+
+
+.button {
+    background-color: #04AA6D; /* Green */
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    
+}
+
+.container-splitui{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-splitui .split{
+    flex-basis: 48%;
+}
+
+.container-splitui .split img{
+    width: 50%;
+}
+
+@media (max-width: 400px){
+    .container-splitui{
+        flex-direction: column;
+    }
+
+    .button{
+        background-color: cyan;
+    }
+}
